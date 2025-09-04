@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mysql:
     build:
@@ -21,9 +19,9 @@ services:
       - ${NETWORK_NAME}
 
 volumes:
-  mysql_data:
+  mysql_data_custom:
     driver: local
 
 networks:
-  mysql_network:
+  mysql_network_custom:
     driver: bridge
